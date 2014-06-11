@@ -1,0 +1,16 @@
+{
+    "id": "p2",
+    "pageIcon": "/-/dp2/profile-image.png",
+    "pageName": "Guest 2",
+    "primaryToolName": "info",
+    "usingTools": {
+        "info": "tlp7"
+    },
+    "lancher": {
+        "info": {
+            "name": "info",
+            "icon": "tools/personal.info/style/images/icon.png",
+            "description": "基本情報"
+        }
+    }
+}

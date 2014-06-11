@@ -1,0 +1,12 @@
+.tag-info-container{
+    max-width: 1200px;
+}
+
+.tag-info-box{
+    width: 100%;
+}
+
+.tag-info-inner-box{
+    padding: 10px 20px 30px 20px;
+    background-color: #fff;
+}

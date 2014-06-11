@@ -1,0 +1,8 @@
+{
+    "pageIcon": "/-/dg1/profile-image.png",
+    "pageName": "Geekz",
+    "primaryToolName": "info",
+    "usingTools": {
+        "info": "tlg11"
+    }
+}

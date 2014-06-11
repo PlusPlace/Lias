@@ -1,0 +1,72 @@
+.global-setting-container{
+    max-width: 1200px;
+}
+
+.global-setting-box{
+    width: 100%;
+}
+
+.global-setting-top-inner-box{
+    height: 50px;
+    margin-left: 0px;
+    background-color: #ddd;
+}
+
+.global-setting-bottom-inner-box{
+    padding: 20px;
+    margin-left: 0px;
+    background-color: #fff;
+}
+
+span.global-setting-button,
+span.global-setting-back-button{
+    font-size: 11px;
+    font-weight: 100;
+    top: 10px;
+    right: 20px;
+    background-color: #a0bc61;
+}
+
+span.global-setting-back-button{
+    display: none;
+}
+
+.global-setting-editor{
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    clear: both;
+    overflow: hidden;
+}
+
+.global-setting-editor dl{
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.global-setting-editor dt{
+    color: #52799E;
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+    text-align: right;
+    clear: both;
+}
+
+.global-setting-editor dd{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.global-setting-editor textarea{
+  width: 200px;
+  height: 34px;
+}

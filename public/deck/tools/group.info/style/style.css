@@ -1,0 +1,337 @@
+/*
+ *  Container
+*/
+.group-info-container{
+    max-width: 1200px;
+}
+
+.group-info-dialog-container{
+    max-width: 800px;
+}
+
+
+/*
+ *  Sections
+*/
+.group-info-left-section{
+    float: left;
+    width: 50%;
+}
+
+.group-info-right-section{
+    float: right;
+    width: 50%;
+}
+
+
+/*
+ *  Box
+*/
+.group-info-box{
+    width: 100%;
+}
+
+
+/*
+ *  Inner box
+*/
+.group-info-top-inner-box-typeA{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 0px;
+    background-color: #ececec;
+}
+
+.group-info-bottom-inner-box-typeA{
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.group-info-top-inner-box-typeA span{
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.group-info-top-inner-box-typeB{
+    margin-left: 0px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.group-info-bottom-inner-box-typeB{
+    margin-left: 0px;
+    height: 50px;
+    background-color: #ececec;
+}
+
+
+
+/*
+ *  Box parts
+*/
+.group-info-box-header h4{
+    margin: 0px;
+    line-height: 50px;
+}
+
+.group-info-box-body{
+    padding: 20px 0px;
+}
+
+.group-info-box-footer{
+    height: 30px;
+}
+
+.group-info-button{
+    color: #333;
+    top: 10px;
+    right: 20px;
+    background-color: #a0bc61;
+}
+
+.group-info-button:hover{
+    background-color: #b3d076;
+}
+
+.group-info-apply-button{
+    color: #333;
+    width: 60px;
+    top: 11px;
+    right: 110px;
+    background-color: #a0bc61;
+}
+
+.group-info-apply-button:hover{
+    background-color: #b3d076;
+}
+
+.group-info-cancel-button{
+    color: #333;
+    width: 60px;
+    top: 11px;
+    right: 20px;
+    background-color: #ececec;
+}
+
+.group-info-cancel-button:hover{
+    background-color: #dcdcdc;
+}
+
+
+.group-info-text-info{
+    font-size: 12px;
+}
+
+.group-info-cnt-info{
+    width: 100%;
+    padding: 0px 5px 5px 0px;
+}
+
+.group-info-cnt-info img{
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -weblit-border-radius: 5px;
+    cursor: pointer;
+}
+
+.group-info-tag-info span{
+    padding: 5px 5px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #000;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+/*
+ *  List
+*/
+.group-info-list {
+    margin: 0px;
+    padding: 10px 0px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    clear: both;
+    overflow: hidden;
+}
+
+.group-info-list dt{
+    color: #52799E;
+    float: left;
+    width: 100px;
+}
+
+.group-info-list dd{
+    float: left;
+    margin-left: 0px;
+}
+
+.group-info-center-list {
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    clear: both;
+    overflow: hidden;
+}
+
+.group-info-center-list dt{
+    color: #52799E;
+    float: left;
+    width: 100px;
+    min-height: 1px;
+    text-align: right;
+    clear: both;
+}
+
+.group-info-center-list dd{
+    float: left;
+    margin-left: 20px;
+}
+
+/*
+ *  Datum
+*/
+.group-info-datum{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+/*
+ *  Removable datum
+*/
+.group-info-removable-datum{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.group-info-removable-datum span, .group-info-removable-datum a{
+    line-height: 24px;
+    margin-left: 24px;
+}
+
+.group-info-removable-datum .group-info-remover{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -weblit-border-radius: 0px;
+    cursor: pointer;
+}
+
+
+/*
+ *  Data
+*/
+.group-info-data{
+    position: relative;
+    margin-bottom: 5px;
+    border-top: 1px solid #ccc;
+}
+
+.group-info-data span{
+    line-height: 48px;
+    margin-left: 60px;
+}
+
+.group-info-data a {
+    color: #000;
+}
+
+.group-info-data img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -weblit-border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*
+ *  Removable data
+*/
+.group-info-removable-data{
+    position: relative;
+    margin-bottom: 5px;
+    border-top: 1px solid #ccc;
+}
+
+.group-info-removable-data .group-info-remover{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    left: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -weblit-border-radius: 0px;
+    cursor: pointer;
+}
+
+.group-info-removable-data span{
+    line-height: 48px;
+    margin-left: 90px;
+}
+
+.group-info-removable-data img{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -weblit-border-radius: 5px;
+}
+
+.group-info-list-no-border{
+    padding-top: 0px;
+    border-top: none;
+}
+
+/*
+ *  Setting form
+*/
+.group-info-form{
+    width: 500px;
+    margin: 0px auto;
+}
+
+.group-info-add-list{
+    position: relative;
+}
+
+.group-info-add-list textarea{
+    height: 14px;
+    margin-left: 24px;
+}
+
+.group-info-add-list img{
+    position: absolute;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+}
+
+.group-info-alert{
+    color: #ff7474;
+}

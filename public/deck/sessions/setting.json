@@ -1,0 +1,9 @@
+{
+    "id": "setting",
+    "pageIcon": "tools/global.setting/style/images/icon.png",
+    "pageName": "設定",
+    "primaryToolName": "general"
+  , "usingTools": {
+        "general": "tlx4"
+    }
+}

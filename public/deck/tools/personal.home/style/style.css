@@ -1,0 +1,145 @@
+.personal-home-container{
+    max-width: 1200px;
+}
+
+.personal-home-header{
+    margin-bottom: 5px;
+}
+
+.personal-home-body{
+    width: 100%;
+    height: 100%;
+}
+
+.personal-home-box{
+    width: 100%;
+}
+
+.personal-home-inner-box{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 5px;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.personal-home-box-title{
+    width: 100%;
+}
+
+.personal-home-inner-box-news-title,
+.personal-home-inner-box-event-title{
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: #ececec;
+}
+
+.personal-home-inner-box-news-title{
+    margin-left: 0px;
+}
+
+.personal-home-inner-box-news-title span,
+.personal-home-inner-box-event-title span{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.personal-home-box-event{
+    width: 100%;
+}
+
+.personal-home-inner-box-event{
+    cursor: pointer;
+    height: 70px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.personal-home-inner-box-event:hover{
+    background-color: #ececec;
+}
+
+.personal-home-event-icon{
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-color: #ececec;
+}
+
+.personal-home-event-icon img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+}
+
+.personal-home-event-name{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.personal-home-event-date{
+    color: #52799e;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.personal-home-box-news{
+    width: 100%;
+}
+
+.personal-home-inner-box-news{
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.personal-home-inner-box-news:hover{
+    background-color: #ececec;
+}
+
+.personal-home-inner-box-news span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.personal-home-news-status{
+    margin-top: 10px;
+}
+
+.personal-home-news-status span{
+    color: #52799e;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.personal-home-title-button{
+    font-size: 11px;
+    font-weight: 100;
+    color: #333;
+    top: 13px;
+    right: 20px;
+    line-height: 22px;
+    padding: 0px 6px;
+    background-color: #a0bc61;
+}
+
+.personal-home-title-button:hover{
+    background-color: #b3d076;
+}

@@ -1,0 +1,18 @@
+{
+    "id": "g0",
+    "pageIcon": "/-/dg0/profile-image.png",
+    "pageName": "+place",
+    "primaryToolName": "home",
+    "usingTools": {
+        "home": "tlg0",
+        "info": "tlg11",
+        "timeline": "tlg1",
+        "member": "tlg9",
+        "connection": "tlg7",
+        "event": "tlg3",
+        "calendar": "tlg4",
+        "facility": "tlg8",
+        "direct-message": "tlg5",
+        "setting": "tlg6"
+    }
+}

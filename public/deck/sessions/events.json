@@ -1,0 +1,16 @@
+{
+    "id": "events",
+    "pageIcon": "tools/global.event-info/style/images/icon.png",
+    "pageName": "イベント",
+    "primaryToolName": "info"
+  , "usingTools": {
+        "info": "tlx1"
+    }
+  , "lancher":{
+        "info": {
+            "name": "info"
+          , "icon": "tools/global.event-info/style/images/icon.png"
+          , "description": "イベント情報"
+        }
+    }
+}

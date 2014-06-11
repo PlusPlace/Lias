@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+    <head>
+        <title>Lias Documentation | Timeline API （ユーザー用） | GET</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../style/page.css" />
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <h2>Timeline API （ユーザー用） - GET</h2>
+                <hr />
+                <ul class="list">
+                    <li class="list-title"><a href="#request-url">リクエストURL</a></li>
+                    <li class="list-title"><a href="#parameters">パラメータ</a></li>
+                    <li class="list-title">
+                        <a href="#response">レスポンス(JSON)</a>
+                        <ul>
+                          <li class="list-title">
+                              <a href="#explanation">複数のタイムライン記事に関して</a>
+                          </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr />
+            </header>
+
+            <article id="request-url">
+                <h4>リクエストURL</h4>
+
+                <section>
+                    <pre><code>GET http://dev-lias.plus-place.org/-/timeline.php</code></pre>
+                </section>
+            </article>
+
+            <article id="parameters">
+                <h4>パラメータ</h4>
+
+                <table class="table">
+                    <tr>
+                        <th>必須パラメータ</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                </table>
+
+                <table class="table">
+                    <tr>
+                        <th>オプションパラメータ</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                </table>
+            </article>
+
+            <article id="response">
+                <h4>レスポンス(JSON)</h4>
+
+                <section>
+<pre><code>[{
+    "createdAt": [
+        {number},
+        {number},
+        {number},
+        {number},
+        {number}
+    ],
+    "article" {string},
+    "articleId" {string},
+    "creator": {
+        "name": {string},
+        "groupId": {string},
+        "icon": {string}
+    },
+    "likes": {number},
+    "liked": {boolean},
+    "comments": [
+        {
+            "commentatorName": {string},
+            "commentatorId": {string},
+            "commentatorIcon": {string},
+            "comment": {string}
+        }
+    ]
+}]</code></pre>
+                </section>
+
+                <table class="table">
+                    <tr>
+                        <th>プロパティ名</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                    <tr>
+                        <td>createdAt[]</td>
+                        <td>list</td>
+                        <td>タイムライン記事を作成した時間</td>
+                    </tr>
+                    <tr>
+                        <td>createdAt[ 0 ]</td>
+                        <td>number</td>
+                        <td>年</td>
+                    </tr>
+                    <tr>
+                        <td>createdAt[ 1 ]</td>
+                        <td>number</td>
+                        <td>月</td>
+                    </tr>
+                    <tr>
+                        <td>createdAt[ 2 ]</td>
+                        <td>number</td>
+                        <td>日</td>
+                    </tr>
+                    <tr>
+                        <td>createdAt[ 3 ]</td>
+                        <td>number</td>
+                        <td>時</td>
+                    </tr>
+                    <tr>
+                        <td>createdAt[ 4 ]</td>
+                        <td>number</td>
+                        <td>分</td>
+                    </tr>
+                    <tr>
+                        <td>createdAt[ 5 ]</td>
+                        <td>number</td>
+                        <td>秒</td>
+                    </tr>
+                    <tr>
+                        <td>article</td>
+                        <td>string</td>
+                        <td>タイムライン記事</td>
+                    </tr>
+                    <tr>
+                        <td>articleId</td>
+                        <td>string</td>
+                        <td>タイムライン記事のID</td>
+                    </tr>
+                    <tr>
+                        <td>creator</td>
+                        <td>object</td>
+                        <td>作成者の情報</td>
+                    </tr>
+                    <tr>
+                        <td>creator.name</td>
+                        <td>string</td>
+                        <td>作成者の名前</td>
+                    </tr>
+                    <tr>
+                        <td>creator.groupId</td>
+                        <td>string</td>
+                        <td>作成者のID（作成者自体がグループなので、groupId と表記してある）</td>
+                    </tr>
+                    <tr>
+                        <td>creator.icon</td>
+                        <td>string</td>
+                        <td>作成者のプロフィール画像</td>
+                    </tr>
+                    <tr>
+                        <td>likes</td>
+                        <td>number</td>
+                        <td>いいね！の数</td>
+                    </tr>
+                    <tr>
+                        <td>liked</td>
+                        <td>boolean</td>
+                        <td>
+                            いいね！をしているかどうかの判別
+                            <ul>
+                                <li>true - している</li>
+                                <li>false - していない</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>comments[]</td>
+                        <td>list</td>
+                        <td>コメントのリスト</td>
+                    </tr>
+                    <tr>
+                        <td>comments[].commentatorName</td>
+                        <td>string</td>
+                        <td>コメントしたユーザーまたはグループの名前</td>
+                    </tr>
+                    <tr>
+                        <td>comments[].commentatorId</td>
+                        <td>string</td>
+                        <td>コメントしたユーザーまたはグループのID</td>
+                    </tr>
+                    <tr>
+                        <td>comments[].commentatorIcon</td>
+                        <td>string</td>
+                        <td>コメントしたユーザーまたはグループのプロフィール画像</td>
+                    </tr>
+                    <tr>
+                        <td>comments[].comment</td>
+                        <td>string</td>
+                        <td>コメント</td>
+                    </tr>
+                </table>
+
+                <section id="explanation">
+                    <h4>複数のタイムライン記事に関して</h4>
+                    <p>
+                        複数のタイムライン記事を JSON に定義する場合、次のようにしてください。
+                    </p>
+<pre><code>[{
+    "createdAt": [
+    ...
+},
+{
+    "createdAt": [
+    ...
+},
+{
+    "createdAt": [
+    ...
+}]</pre></code>
+                    <p>
+                        また、最新の記事がリストの先頭に来るようにしてください。
+                    </p>
+                </section>
+
+            </article>
+        </div>
+    </body>
+
+</html>

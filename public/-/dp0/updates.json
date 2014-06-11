@@ -1,0 +1,26 @@
+[{
+    "news": [
+        {
+            "newsId": "",
+            "name": "",
+            "type": "",
+            "contents": ""
+        }
+    ],
+    "liasNews": [
+        {
+            "newsId": "",
+            "name": "",
+            "type": "",
+            "contents": ""
+        }
+    ],
+    "recommendedEvents": [
+        {
+            "name": "第一回+placeカンファレンス",
+            "eventId": "",
+            "eventIcon": "",
+            "date": [ "2012", "6", "23" ]
+        }
+    ]
+}]

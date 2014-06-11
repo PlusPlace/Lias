@@ -1,0 +1,48 @@
+{
+    "articles": [{
+        "createdAt":[
+            "2012", "3", "22", "0", "00"
+        ],
+        "article": "更新・更新",
+        "articleId": "a0",
+        "creator": {
+            "name": "+place",
+            "groupId": "0",
+            "icon": "/-/dg0/profile-image.png"
+        },
+        "likes": "0",
+        "liked": "false",
+        "comments": [
+            {
+                "commentatorName": "Administrator",
+                "commentatorId": "p0",
+                "commentatorIcon": "/-/dp0/profile-image.png",
+                "comment": "おお、行進・・・"
+            },
+            {
+                "commentatorName": "Guest 1",
+                "commentatorId": "p1",
+                "commentatorIcon": "/-/dp1/profile-image.png",
+                "comment": "更新だよー"
+            }
+        ]
+    },
+    {
+        "createdAt":[
+            "2012", "3", "22", "0", "00"
+        ],
+        "article": "よくできた！",
+        "articleId": "a6",
+        "creator": {
+            "name": "+place",
+            "groupId": "0",
+            "icon": "/-/dg0/profile-image.png"
+        },
+        "likes": "0",
+        "liked": "false",
+        "comments": [
+        ]
+
+    }]
+}
+

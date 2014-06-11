@@ -1,0 +1,39 @@
+{
+    "name": "Guest 1",
+    "profileImage": "/-/dp1/profile-image.png",
+    "bio": "Liasのゲストアカウントです。<br />一般ユーザーと同等の権限を有しています。",
+    "groups": [
+        {
+            "name": "+place",
+            "groupId": "g0",
+            "icon": "/-/dg0/profile-image.png"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Developers",
+            "tagId": "t0"
+        }
+    ],
+    "basicInfo": {
+        "age": "xx",
+        "gender": "男か女",
+        "belongGroups": [
+            {
+                "name": "+place",
+                "groupId": "g0",
+                "icon": "/-/dg0/profile-image.png"
+            }
+        ]
+    },
+    "contactInfo": {
+        "mails": [
+            "info.plusplace@gmail.com"
+        ],
+        "websites": [
+            "http://plusplace.info",
+            "http://lias.plus-place.org",
+            "http://ts.plus-place.org"
+        ]
+    }
+}

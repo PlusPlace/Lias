@@ -1,0 +1,159 @@
+.group-home-container{
+    max-width: 1200px;
+}
+
+.group-home-body{
+    width: 100%;
+    height: 100%;
+}
+
+.group-home-left-section,
+.group-home-right-section{
+    float: left;
+    width: 50%;
+}
+
+.group-home-box{
+    width: 100%;
+}
+
+.group-home-inner-box{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 5px;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.group-home-box-title{
+    width: 100%;
+}
+
+.group-home-inner-box-left-title,
+.group-home-inner-box-right-title{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0px;
+    background-color: #ececec;
+}
+
+.group-home-inner-box-left-title{
+    margin-left: 0px;
+}
+
+.group-home-inner-box-left-title span,
+.group-home-inner-box-right-title span{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.group-home-box-right{
+    width: 100%;
+}
+
+.group-home-inner-box-right{
+    cursor: pointer;
+    height: 70px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.group-home-member-icon,
+.group-home-event-icon{
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-color: #ececec;
+}
+
+.group-home-member-icon img,
+.group-home-event-icon img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+}
+
+.group-home-member-name{
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.group-home-member-update,
+.group-home-event-name{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.group-home-member-date,
+.group-home-event-date{
+    color: #52799e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.group-home-member-date{
+    margin-left: 10px;
+}
+
+.group-home-event-date{
+    margin-left: 20px;
+}
+
+.group-home-box-left{
+    width: 100%;
+}
+
+.group-home-inner-box-left{
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.group-home-inner-box-left:hover{
+    background-color: #ececec;
+}
+
+.group-home-inner-box-left span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.group-home-status{
+    margin-top: 10px;
+}
+
+.group-home-status span{
+    color: #52799e;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.group-home-title-button{
+    font-size: 11px;
+    font-weight: 100;
+    color: #333;
+    top: 13px;
+    right: 20px;
+    line-height: 22px;
+    padding: 0px 6px;
+    background-color: #a0bc61;
+}
+
+.group-home-title-button:hover{
+    background-color: #b3d076;
+}

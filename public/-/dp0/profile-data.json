@@ -1,0 +1,62 @@
+{
+    "name": "Administrator",
+    "profileImage": "/-/dp0/profile-image.png",
+    "bio": "Liasの管理者です。<br />がんばって開発していきましょう。",
+    "groups": [
+        {
+            "name": "+place",
+            "groupId": "0",
+            "icon": "/-/dg0/profile-image.png"
+        },
+        {
+            "name": "+place Dummy",
+            "groupId": "0",
+            "icon": "/-/dg0/profile-image.png"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Developers",
+            "tagId": "t0"
+        }
+    ],
+    "basicInfo": {
+        "birthday": [ "1901", "1", "1" ],
+        "gender": "男",
+        "genderVal": "male",
+        "belongGroups": [
+            {
+                "name": "+place",
+                "groupId": "0",
+                "icon": "/-/dg0/profile-image.png"
+            },
+            {
+                "name": "+place Dummy",
+                "groupId": "0",
+                "icon": "/-/dg0/profile-image.png"
+            }
+        ]
+    },
+    "contactInfo": {
+        "mails": [
+            "info.plusplace@gmail.com"
+        ],
+        "websites": [
+            "http://plusplace.info",
+            "http://lias.plus-place.org",
+            "http://ts.plus-place.org"
+        ]
+    },
+    "privacy": {
+        "bio": "public",
+        "groups": "public",
+        "tags": "public",
+        "gender": "public",
+        "birthday": "public",
+        "belongGroups": "public",
+        "mails": "public",
+        "websites": "public"
+    },
+    "valid": true,
+    "permission": true
+}

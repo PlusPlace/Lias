@@ -1,0 +1,114 @@
+.group-connection-container{
+    max-width: 1200px;
+}
+
+.group-connection-box{
+    width: 100%;
+}
+
+.group-connection-inner-box{
+    min-height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.group-connection-inner-box-title{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 0px;
+    background-color: #ececec;
+    overflow: hidden;
+}
+
+.group-conneciton-user-data{
+    margin-left: 68px;
+}
+
+.group-connection-info{
+    margin-top: 5px;
+    clear: both;
+}
+
+.group-connection-info span{
+    color: #52799e;
+    font-size: 12px;
+}
+
+.group-connection-user-icon{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 15px;
+    left: 20px;
+}
+
+.group-connection-user-data{
+    margin-left: 68px;
+}
+
+.group-connection-name{
+    overflow: hidden;
+}
+
+.group-connection-name a{
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.group-connection-button,
+.group-connection-back-button,
+.group-connection-remove-button{
+    font-size: 11px;
+    font-weight: 100;
+    top: 10px;
+    right: 20px;
+    background-color: #a0bc61;
+}
+
+.group-connection-back-button{
+    display: none;
+}
+
+.group-connection-remove-button{
+    position: static;
+    margin-top: 10px;
+}
+
+.group-connection-editor{
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    clear: both;
+    overflow: hidden;
+}
+
+.group-connection-editor dl{
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.group-connection-editor dt{
+    color: #52799E;
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+    text-align: right;
+    clear: both;
+}
+
+.group-connection-editor dd{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+}

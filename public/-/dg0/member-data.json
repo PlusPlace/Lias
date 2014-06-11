@@ -1,0 +1,29 @@
+{
+    "members": [
+      {
+          "userId": "p0",
+          "name": "Administrator",
+          "icon": "/-/dp0/profile-image.png",
+          "position": "開発代表",
+          "mail": "mail@mail.com",
+          "admin": true
+      },
+      {
+          "userId": "p1",
+          "name": "Guest 1",
+          "icon": "/-/dp1/profile-image.png",
+          "position": "開発",
+          "mail": "mail@mail.com",
+          "admin": false
+      },
+      {
+          "userId": "p2",
+          "name": "Guest 2",
+          "icon": "/-/dp2/profile-image.png",
+          "position": "",
+          "mail": "",
+          "admin": false
+      }
+    ],
+    "permission": true
+}

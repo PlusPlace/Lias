@@ -1,0 +1,48 @@
+[{
+    "group": {
+        "name": "+place",
+        "groupId": "g0",
+        "icon": "/-/dg0/profile-image.png"
+    },
+    "updates": [
+        {
+            "updatedAt": "2012-3-25",
+            "update": "Updated.",
+            "updateId": "u0"
+        },
+        {
+            "updatedAt": "2012-3-25",
+            "update": "Updated.",
+            "updateId": "u1"
+        },
+        {
+            "updatedAt": "2012-3-25",
+            "update": "Updated.",
+            "updateId": "u2"
+        }
+    ]
+},
+{
+    "group": {
+        "name": "+place Dummy",
+        "groupId": "g00",
+        "icon": "/-/dg0/profile-image.png"
+    },
+    "updates": [
+        {
+            "updatedAt": "2012-3-25",
+            "update": "Updated.",
+            "updateId": "u3"
+        },
+        {
+            "updatedAt": "2012-3-25",
+            "update": "Updated.",
+            "updateId": "u4"
+        },
+        {
+            "updatedAt": "2012-3-25",
+            "update": "Updated.",
+            "updateId": "u5"
+        }
+    ]
+}]

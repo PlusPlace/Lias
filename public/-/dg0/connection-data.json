@@ -1,0 +1,10 @@
+{
+  "groups": [
+      {
+          "groupId": "g1",
+          "name": "Geekz",
+          "icon": "/-/dg1/profile-image.png"
+      }
+  ],
+  "permission":  true
+}

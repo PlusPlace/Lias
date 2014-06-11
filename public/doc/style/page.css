@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/*
+ *  ドキュメント補正
+*/
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+}
+
+
+/*
+ *  要素補正
+*/
+img{
+    border: 0px;
+}
+
+
+/**
+ *  コンテナー
+*/
+.container{
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+
+/*
+ *  ヘッダー
+*/
+header{
+    width: 100%;
+}
+
+
+/*
+ *  リスト
+*/
+.list{
+    font-size: 13px;
+}
+
+.list-title{
+    font-weight: bold;
+}
+
+.list-contents{
+    list-style: none;
+}
+
+
+/*
+ *  テーブル
+*/
+.table{
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 25px;
+}
+
+.table th{
+    text-align: left;
+    border: 1px solid #d3d3d3;
+    padding: 5px 0px;
+    background-color: #eee;
+}
+
+.table td{
+    border: 1px solid #d3d3d3;
+    padding: 5px 0px;
+}
+
+
+/*
+ *  アーティクル
+*/
+article{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+/*
+ *  セクション
+*/
+section{
+    border-top: 2px solid #d3d3d3;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+section h4{
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+section pre{
+    background-color: #eee;
+    margin: 0px;
+    padding: 20px;
+}
+
+.func-io{
+    margin-top: 10px;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #2a2a2a;
+} 

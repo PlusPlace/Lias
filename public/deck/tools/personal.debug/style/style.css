@@ -1,0 +1,12 @@
+.debug-box{
+    width: 400px;
+}
+
+.debug-inner-box{
+    height: 400px;
+    background-color: #fff;
+}
+
+.debug-body{
+    padding-left: 20px;
+}

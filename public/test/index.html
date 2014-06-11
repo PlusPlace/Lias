@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <title>API Tester</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" charset="utf-8" src="loader.js"></script>
+    <script type="text/javascript" charset="utf-8" src="jquery.js"></script>
+    <script>
+      window.onload = function(){
+        $( '#check-json-button' ).bind( 'click', function(){
+          // Get requirement
+          var url = $( '#check-json-url' ).val()
+            , method = $( '#check-json-method' ).val();
+
+          // Get data
+          if( method == 'post' )
+            var data = $( '#check-json-data' ).val();
+          else
+            var data = null;
+
+
+          // Get and evaluate JSON
+          ajax.require({
+              url: url
+            , data: data
+            , methodType: method
+            , dataType: 'text'
+            , done: function( res, status ){
+                var data = eval( '(' + res + ')' );
+                $( '#check-json-code' ).html( status );
+                $( '#check-json-area' ).html( res );
+                console.log( data );
+              }
+            , error: function( res, status ){
+                var data = eval( '(' + res + ')' );
+                $( '#check-json-code' ).html( status );
+                $( '#check-json-area' ).html( res );
+                console.log( data );
+              }
+          });
+        });
+      };
+    </script>
+  </head>
+
+  <body>
+    <form action="#" class="check-json-form">
+      <dl>
+        <dt>URL</dt>
+        <dd><textarea id="check-json-url"></textarea></dd>
+        <dt>Data</dt>
+        <dd><textarea id="check-json-data"></textarea></dd>
+        <dt>Method</dt>
+        <dd>
+          <select id="check-json-method">
+            <option value="get">GET</option>
+            <option value="post">POST</option>
+          </select>
+        </dd>
+      </dl>
+      <button type="button" id="check-json-button">確認</button>
+    </form>
+
+    <div>
+      <span>Code: </span><span id="check-json-code"></span>
+    </div>
+    <div>
+      <dl>
+        <dt>Response</dt>
+        <dd id="check-json-area"></dd>
+      </dl>
+    </div>
+  </body>
+</html>

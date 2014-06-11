@@ -1,0 +1,411 @@
+/**
+ *  Lias::Template::Stylesheet
+ * 
+ *  @version 0.0.1
+ *  @author  Saneyuki Tadokoro <post@saneyuki.gfunction.com>
+ * 
+ *  Copyright (c) 2011, 2012 Plus-place project
+*/
+
+/*
+ *  Header
+*/
+#header{
+    z-index: 100;
+    display: none;
+    position: absolute;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #ececec;
+    overflow: hidden;
+}
+
+.logo{
+    display: block;
+    float: left;
+    height: 45px;
+    margin-left: 50px;
+    margin-top: 6px;
+}
+
+#header-buttons{
+    float: right;
+    margin: 0px 40px 0px 0px;
+    padding: 0px;
+}
+
+#header-buttons li{
+    cursor: pointer;
+    float: right;
+    position: relative;
+    min-width: 30px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 12px;
+    list-style: none;
+}
+
+#header-buttons li:hover{
+    background: #000 url(images/bg.png) repeat top left;
+}
+
+#header-buttons #page-status{
+    cursor: default;
+    background: #000 url(images/bg.png) repeat top left;
+}
+
+#header-buttons img{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 4px;
+}
+
+#header-buttons span{
+    color: #fff;
+    line-height: 40px;
+    margin-left: 32px;
+    padding: 0px 8px;
+}
+
+.header-top{
+    height: 60px;
+}
+
+.header-bottom{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.header-table-menu{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-table-menu tr td{
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.header-table-menu tr td a,
+.header-table-menu tr td p{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #5a5a5a;
+}
+
+.header-table-menu tr td a:hover,
+.header-table-menu tr td p:hover{
+    background-color: #202020;
+}
+
+.header-table-menu tr td a img,
+.header-table-menu tr td p img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.header-table-menu tr td a span,
+.header-table-menu tr td p span{
+    color: #fff;
+}
+
+
+/*
+ *  Multipurpose-board
+*/
+#multipurpose-board{
+    display: none;
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    left: 100px;
+    right: 30px;
+}
+
+#inner-multipurpose-board{
+    position: relative;
+}
+
+#multipurpose-board .viewport{
+    float: left;
+    height: 100%;
+}
+
+#multipurpose-board .overview{
+    position: absolute;
+    width: 100%;
+}
+
+#multipurpose-board .scrollbar{
+    z-index: 100;
+    position: absolute;
+    width: 9px;
+    top: 0px;
+    bottom: 0px;
+    right: -32px;
+}
+
+#multipurpose-board .track{
+    position: relative;
+    width: 9px;
+    height: 100%;
+}
+
+#multipurpose-board .thumb{
+    height: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+}
+
+#multipurpose-board .thumb .end{
+    height: 0px;
+    overflow: hidden;
+}
+
+#multipurpose-board .thumb .end,
+#multipurpose-board .thumb{
+    width: 5px;
+    background-color: #ddd;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+
+#multipurpose-board .disable{
+    display: none;
+}
+
+.r-a{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.r-tl{
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+}
+
+.r-tr{
+    border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+
+.r-bl{
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+
+.r-br{
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.ui-container{
+    margin: 0 auto;
+}
+
+.ui-header{
+    position: relative;
+    width: 330px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.ui-header-text span{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.ui-header-image{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 0px 0px 5px;
+    -webkit-border-radius: 0px 0px 0px 5px;
+    -moz-border-radius: 0px 0px 0px 5px;
+}
+
+.ui-header-image img{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 7px;
+    left: 14px;
+}
+
+.ui-box{
+    float: left;
+    overflow: hidden;
+}
+
+.ui-inner-box,
+.ui-top-inner-box,
+.ui-middle-inner-box,
+.ui-bottom-inner-box{
+    position: relative;
+    word-wrap: break-word;
+}
+
+.ui-inner-box{
+    margin: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.ui-top-inner-box{
+    margin: 10px 10px 0px 10px;
+    border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+}
+
+.ui-middle-inner-box{
+    margin: 0px 10px 0px 10px;
+}
+
+.ui-bottom-inner-box{
+    margin: 0px 10px 10px 10px;
+    border-radius: 0px 0px 3px 3px;
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 5px 5px;
+}
+
+.ui-clear{
+    clear: both;
+}
+
+.ui-button{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    color: #333;
+    font-size: 11px;
+    line-height: 25px;
+    padding: 0px 10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    box-shadow: 0px 1px 1px #a2a2a2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+
+/*
+ *  Lancher
+*/
+#lancher{
+    position: absolute;
+    width: 76px;
+    top: 80px;
+    bottom: 20px;
+    left: -76px;
+    border-radius: 0px 3px 3px 0px;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    background: #ececec;
+}
+
+#inner-lancher{
+    position: relative;
+}
+
+#lancher .viewport{
+    float: left;
+    height: 100%;
+}
+
+#lancher .overview{
+    list-style: none;
+    position: absolute;
+}
+
+#lancher .scrollbar{
+    z-index: 100;
+    position: absolute;
+    width: 9px;
+    top: 0px;
+    right: -10px;
+}
+
+#lancher .track{
+    position: relative;
+    width: 9px;
+    height: 100%;
+}
+
+#lancher .thumb{
+    height: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+}
+
+#lancher .thumb .end{
+    height: 0px;
+    overflow: hidden;
+}
+
+#lancher .thumb .end,
+#lancher .thumb{
+    width: 5px;
+    background-color: #ddd;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+
+#lancher .disable{
+    display: none;
+}
+
+.lancher-tool-icon{
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    margin: 10px 10px 0px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.lancher-tool-icon:hover{
+    background-image: url(images/lancher-icon-bg.png);
+}

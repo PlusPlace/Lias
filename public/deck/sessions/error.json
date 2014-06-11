@@ -1,0 +1,16 @@
+{
+    "id": "error",
+    "pageIcon": "tools/message/style/images/error.png",
+    "pageName": "Error",
+    "primaryToolName": "message"
+  , "usingTools": {
+        "message": "tlx0"
+    }
+  , "lancher":{
+        "message": {
+            "name": "message"
+          , "icon": "tools/message/style/images/error.png"
+          , "description": "メッセージ"
+        }
+    }
+}

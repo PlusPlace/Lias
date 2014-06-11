@@ -1,0 +1,47 @@
+{
+    "articles": [{
+        "createdAt":[
+            "2012", "3", "22", "0", "00"
+        ],
+        "article": "Hello, world.",
+        "articleId": "a0",
+        "creator": {
+            "name": "+place",
+            "groupId": "0",
+            "icon": "/-/dg0/profile-image.png"
+        },
+        "likes": "0",
+        "liked": "false",
+        "comments": [
+            {
+                "commentatorName": "Administrator",
+                "commentatorId": "p0",
+                "commentatorIcon": "/-/dp0/profile-image.png",
+                "comment": "とりあえず、コメントを。。。"
+            },
+            {
+                "commentatorName": "Guest 1",
+                "commentatorId": "p1",
+                "commentatorIcon": "/-/dp1/profile-image.png",
+                "comment": "元気ですかー！"
+            }
+        ]
+    },
+    {
+        "createdAt":[
+            "2012", "3", "22", "0", "00"
+        ],
+        "article": "<p>テストアーティクル6 - XSS対策確認1 - \"&gt;&lt;script&gt;alert(1)&lt;/script</p><p>テストアーティクル6 - XSS対策確認1 - \"&gt;&lt;script&gt;alert(1)&lt;/script</p>",
+        "articleId": "a6",
+        "creator": {
+            "name": "+place",
+            "groupId": "0",
+            "icon": "/-/dg0/profile-image.png"
+        },
+        "likes": "0",
+        "liked": "false",
+        "comments": [
+        ]
+
+    }]
+}

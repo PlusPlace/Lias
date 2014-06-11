@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+    <head>
+        <title>Lias Documentation | Profile Data API （ユーザー用） | GET</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../style/page.css" />
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <h2>Profile Data API （ユーザー用） - GET</h2>
+                <hr />
+                <ul class="list">
+                    <li class="list-title"><a href="#request-url">リクエストURL</a></li>
+                    <li class="list-title"><a href="#parameters">パラメータ</a></li>
+                    <li class="list-title"><a href="#response">レスポンス(JSON)</a></li>
+                </ul>
+                <hr />
+            </header>
+
+            <article id="request-url">
+                <h4>リクエストURL</h4>
+
+                <section>
+                  <pre><code>GET http://dev-lias.plus-place.org/-/profile-data.php</code></pre>
+                </section>
+            </argicle>
+
+            <article id="parameters">
+                <h4>パラメータ</h4>
+
+                <table class="table">
+                    <tr>
+                        <th>必須パラメータ</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                </table>
+
+                <table class="table">
+                    <tr>
+                        <th>オプションパラメータ</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                </table>
+            </article>
+
+            <article id="response">
+                <h4>レスポンス(JSON)</h4>
+
+                <section>
+<pre><code>[{
+    "name": {string},
+    "profileImage": {string},
+    "bio": {string},
+    "groups": [
+        {
+            "name": {string},
+            "groupId": {string},
+            "icon": {string}
+        }
+    ],
+    "tags": [
+        {
+            "name": {string},
+            "tagId": {string}
+        }
+    ],
+    "basicInfo": {
+        "birthday": [
+            {number},
+            {number},
+            {number} 
+        ],
+        "gender": {string},
+        "genderVal": {string},
+        "belongGroups": [
+            {
+                "name": {string},
+                "groupId": {string},
+                "icon": {string}
+            }
+        ]
+    },
+    "contactInfo": {
+        "mails": [
+            {string}
+        ],
+        "websites": [
+            {string}
+        ]
+    },
+    "privacy": {
+        "bio": {string},
+        "groups": {string},
+        "tags": {string},
+        "gender": {string},
+        "birthday": {string},
+        "belongGroups": {string},
+        "mails": {string},
+        "websites": {string}
+    },
+    "valid": {boolean},
+    "permission": {boolean}
+}]</code></pre>
+                </section>
+
+                <table class="table">
+                    <tr>
+                        <th>プロパティ名</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>string</td>
+                        <td>ユーザー名</td>
+                    </tr>
+                    <tr>
+                        <td>profileImage</td>
+                        <td>string</td>
+                        <td>プロフィール画像のURL</td>
+                    </tr>
+                    <tr>
+                        <td>bio</td>
+                        <td>string</td>
+                        <td>自己紹介文</td>
+                    </tr>
+                    <tr>
+                        <td>groups[]</td>
+                        <td>list</td>
+                        <td>フォローしているグループのリスト</td>
+                    </tr>
+                    <tr>
+                        <td>groups[].name</td>
+                        <td>string</td>
+                        <td>グループの名前</td>
+                    </tr>
+                    <tr>
+                        <td>groups[].groupId</td>
+                        <td>string</td>
+                        <td>グループID</td>
+                    </tr>
+                    <tr>
+                        <td>groups[].icon</td>
+                        <td>string</td>
+                        <td>グループのプロフィール画像のURL</td>
+                    </tr>
+                    <tr>
+                        <td>tags[]</td>
+                        <td>list</td>
+                        <td>タグのリスト</td>
+                    </tr>
+                    <tr>
+                        <td>tags[].name</td>
+                        <td>string</td>
+                        <td>タグ名</td>
+                    </tr>
+                    <tr>
+                        <td>tags[].tagId</td>
+                        <td>string</td>
+                        <td>タグID</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo</td>
+                        <td>object</td>
+                        <td>基本情報のオブジェクト</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.birthday[]</td>
+                        <td>list</td>
+                        <td>誕生日</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.birthday[ 0 ]</td>
+                        <td>string</td>
+                        <td>年</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.birthday[ 1 ]</td>
+                        <td>string</td>
+                        <td>月</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.birthday[ 2 ]</td>
+                        <td>string</td>
+                        <td>日</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.gender</td>
+                        <td>string</td>
+                        <td>
+                            設定されている言語で表記された性別
+                            <p>
+                                <i>例えば日本語に設定されている場合</i>
+                            </p>
+                            <ul>
+                                <li>"男" - 男</li>
+                                <li>"女" - 女</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.genderVal</td>
+                        <td>string</td>
+                        <td>
+                            英語で表記された性別<br />
+                            <ul>
+                                <li>"male" - 男</li>
+                                <li>"female" - 女</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.belongGroups[]</td>
+                        <td>list</td>
+                        <td>所属しているグループのリスト</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.belongGroups[].name</td>
+                        <td>string</td>
+                        <td>グループの名前</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.belongGroups[].groupId</td>
+                        <td>string</td>
+                        <td>グループID</td>
+                    </tr>
+                    <tr>
+                        <td>basicInfo.belongGroups[].icon</td>
+                        <td>string</td>
+                        <td>グループのプロフィール画像のURL</td>
+                    </tr>
+                    <tr>
+                        <td>contactInfo</td>
+                        <td>object</td>
+                        <td>コンタクト情報のオブジェクト</td>
+                    </tr>
+                    <tr>
+                        <td>contactInfo.mails[]</td>
+                        <td>list</td>
+                        <td>メールアドレスのリスト</td>
+                    </tr>
+                    <tr>
+                        <td>contactInfo.mails[ n ]</td>
+                        <td>string</td>
+                        <td>メールアドレス</td>
+                    </tr>
+                    <tr>
+                        <td>contactInfo.webistes[]</td>
+                        <td>list</td>
+                        <td>ウェブサイトURLのリスト</td>
+                    </tr>
+                    <tr>
+                        <td>contactInfo.websites[ n ]</td>
+                        <td>string</td>
+                        <td>ウェブサイトURL</td>
+                    </tr>
+                    <tr>
+                        <td>privacy</td>
+                        <td>object</td>
+                        <td>
+                            プライバシーのオブジェクト<br />
+                            <b></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>privacy.bio</td>
+                        <td>string</td>
+                        <td>
+                            自己紹介文の公開設定<br />
+                            <ul>
+                                <li>"private" - 非公開</li>
+                                <li>"limited" - グループメンバーのみ公開</li>
+                                <li>"public" - 公開</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>privacy.gruops</td>
+                        <td>string</td>
+                        <td>
+                            フォローしているグループの公開設定<br />
+                            <ul>
+                                <li>"private" - 非公開</li>
+                                <li>"limited" - グループメンバーのみ公開</li>
+                                <li>"public" - 公開</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>privacy.tags</td>
+                        <td>string</td>
+                        <td>
+                            タグの公開設定<br />
+                            <ul>
+                                <li>"private" - 非公開</li>
+                                <li>"limited" - グループメンバーのみ公開</li>
+                                <li>"public" - 公開</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>privacy.gender</td>
+                        <td>string</td>
+                        <td>
+                            性別の公開設定<br />
+                            <ul>
+                                <li>"private" - 非公開</li>
+                                <li>"limited" - グループメンバーのみ公開</li>
+                                <li>"public" - 公開</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>privacy.birthday</td>
+                        <td>string</td>
+                        <td>
+                            誕生日の公開設定<br />
+                            <ul>
+                                <li>"private" - 非公開</li>
+                                <li>"limited" - グループメンバーのみ公開</li>
+                                <li>"public" - 公開</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>privacy.belongGroups</td>
+                        <td>string</td>
+                        <td>
+                            所属しているグループの公開設定<br />
+                            <ul>
+                                <li>"private" - 非公開</li>
+                                <li>"limited" - グループメンバーのみ公開</li>
+                                <li>"public" - 公開</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>privacy.mails</td>
+                        <td>string</td>
+                        <td>
+                            メールアドレスの公開設定<br />
+                            <ul>
+                                <li>"private" - 非公開</li>
+                                <li>"limited" - グループメンバーのみ公開</li>
+                                <li>"public" - 公開</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>privacy.websites</td>
+                        <td>string</td>
+                        <td>
+                            ウェブサイトURLの公開設定<br />
+                            <ul>
+                                <li>"private" - 非公開</li>
+                                <li>"limited" - グループメンバーのみ公開</li>
+                                <li>"public" - 公開</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>valid</td>
+                        <td>boolean</td>
+                        <td>
+                            有効なユーザーかどうかの判別<br />
+                            <ul>
+                                <li>true - 有効</li>
+                                <li>false - 無効</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>permission</td>
+                        <td>boolean</td>
+                        <td>
+                            基本情報の設定が可能かどうかの判別<br />
+                            <ul>
+                                <li>true - 可</li>
+                                <li>false - 不可</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </div>
+    </body>
+
+</html>

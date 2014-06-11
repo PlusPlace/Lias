@@ -1,0 +1,13 @@
+.event-info-container{
+    max-width: 1200px;
+}
+
+.event-info-box{
+    width: 100%;
+}
+
+.event-info-inner-box{
+    padding: 10px 20px 30px 20px;
+    background-color: #fff;
+}
+

@@ -1,0 +1,140 @@
+.personal-tl-container{
+    max-width: 1200px;
+    height: 100%;
+}
+
+.personal-tl-box{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.personal-tl-top-inner-box{
+    margin-left: 0px;
+    background-color: #fff;
+}
+
+.personal-tl-bottom-inner-box{
+    margin-left: 0px;
+    padding: 10px 0px;
+    background-color: #ececec;
+    overflow: hidden;
+}
+
+.personal-tl-icon{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 10px;
+    left: 20px;
+}
+
+.personal-tl-contents{
+    min-height: 74px;
+    margin-left: 110px;
+    margin-right: 10px;
+    padding: 15px 0px;
+}
+
+.personal-tl-name{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.personal-tl-article{
+    font-size: 12px;
+}
+
+.personal-tl-article p{
+    margin: 0px;
+    padding: 1em 0px;
+}
+
+.personal-tl-status span{
+    color: #52799e;
+    font-size: 12px;
+}
+
+.personal-tl-commentator{
+    position: relative;
+    margin-left: 20px;
+}
+
+.personal-tl-commentator-icon{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 10px;
+    left: 20px;
+}
+
+.personal-tl-commentator-contents{
+    font-size: 12px;
+    min-height: 22px;
+    margin-left: 72px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.personal-tl-commentator-comment{
+    font-size: 12px;
+    padding: 1em 0px;
+}
+
+.personal-tl-like-button{
+    left: 40px;
+    background-color: #a0bc61;
+}
+
+.personal-tl-like-button:hover{
+    background-color: #b3d076;
+}
+
+.personal-tl-comment-button{
+    border-color: #ccc;
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+}
+
+.personal-tl-comment-button:hover{
+    background-color: #dcdcdc;
+}
+
+.personal-tl-evaluation{
+    height: 40px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.personal-tl-make-comment{
+  height: 60px;
+  padding: 10px 56px 10px 40px;
+}
+
+.personal-tl-make-comment textarea{
+  display: block;
+  width: 100%;
+  height: 14px;
+  border: 1px solid #ccc;
+}
+
+#personal-tl-notice{
+  display: none;
+}
+
+.personal-tl-box-notice{
+  width: 100%;
+}
+
+.personal-tl-inner-box-notice{
+  margin-left: 0px;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  background-color: #eee;
+  text-align: center;
+}

@@ -1,0 +1,128 @@
+.member-container{
+    max-width: 1200px;
+}
+
+.member-box{
+    width: 100%;
+}
+
+.member-inner-box{
+    min-height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.member-inner-box-title{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 0px;
+    background-color: #ececec;
+    overflow: hidden;
+}
+
+.member-inner-box-title span{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.member-status{
+    margin-top: 5px;
+    clear: both;
+}
+
+.member-status span{
+    color: #52799e;
+    font-size: 12px;
+}
+
+.member-user-icon{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 15px;
+    left: 20px;
+}
+
+.member-user-data{
+    margin-left: 68px;
+}
+
+.member-info{
+    overflow: hidden;
+}
+
+.member-info a{
+    display: block;
+    float: left;
+    line-height: 32px;
+}
+
+.member-info img{
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+span.member-button,
+span.member-back-button,
+span.member-remove-button{
+    font-size: 11px;
+    font-weight: 100;
+    top: 10px;
+    right: 20px;
+    background-color: #a0bc61;
+}
+
+span.member-back-button{
+    display: none;
+}
+
+span.member-remove-button{
+    position: static;
+    margin-top: 10px;
+}
+
+.member-editor{
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    clear: both;
+    overflow: hidden;
+}
+
+.member-editor dl{
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.member-editor dt{
+    color: #52799E;
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+    text-align: right;
+    clear: both;
+}
+
+.member-editor dd{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.member-editor textarea{
+    width: 200px;
+    height: 34px;
+}

@@ -1,0 +1,12 @@
+.search-container{
+    max-width: 1200px;
+}
+
+.search-box{
+    width: 100%;
+}
+
+.search-inner-box{
+    padding: 10px 20px 30px 20px;
+    background-color: #fff;
+}

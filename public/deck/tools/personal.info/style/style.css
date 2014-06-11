@@ -1,0 +1,337 @@
+/*
+ *  Container
+*/
+.personal-info-container{
+    max-width: 1200px;
+}
+
+.personal-info-dialog-container{
+    max-width: 800px;
+}
+
+
+/*
+ *  Sections
+*/
+.personal-info-left-section{
+    float: left;
+    width: 50%;
+}
+
+.personal-info-right-section{
+    float: right;
+    width: 50%;
+}
+
+
+/*
+ *  Box
+*/
+.personal-info-box{
+    width: 100%;
+}
+
+
+/*
+ *  Inner box
+*/
+.personal-info-top-inner-box-typeA{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 0px;
+    background-color: #ececec;
+}
+
+.personal-info-bottom-inner-box-typeA{
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.personal-info-top-inner-box-typeA span{
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.personal-info-top-inner-box-typeB{
+    margin-left: 0px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.personal-info-bottom-inner-box-typeB{
+    margin-left: 0px;
+    height: 50px;
+    background-color: #ececec;
+}
+
+
+
+/*
+ *  Box parts
+*/
+.personal-info-box-header h4{
+    margin: 0px;
+    line-height: 50px;
+}
+
+.personal-info-box-body{
+    padding: 20px 0px;
+}
+
+.personal-info-box-footer{
+    height: 30px;
+}
+
+.personal-info-button{
+    color: #333;
+    top: 10px;
+    right: 20px;
+    background-color: #a0bc61;
+}
+
+.personal-info-button:hover{
+    background-color: #b3d076;
+}
+
+.personal-info-apply-button{
+    color: #333;
+    width: 60px;
+    top: 11px;
+    right: 110px;
+    background-color: #a0bc61;
+}
+
+.personal-info-apply-button:hover{
+    background-color: #b3d076;
+}
+
+.personal-info-cancel-button{
+    color: #333;
+    width: 60px;
+    top: 11px;
+    right: 20px;
+    background-color: #ececec;
+}
+
+.personal-info-cancel-button:hover{
+    background-color: #dcdcdc;
+}
+
+
+.personal-info-text-info{
+    font-size: 12px;
+}
+
+.personal-info-cnt-info{
+    width: 100%;
+    padding: 0px 5px 5px 0px;
+}
+
+.personal-info-cnt-info img{
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -weblit-border-radius: 5px;
+    cursor: pointer;
+}
+
+.personal-info-tag-info span{
+    padding: 5px 5px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #000;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+/*
+ *  List
+*/
+.personal-info-list {
+    margin: 0px;
+    padding: 10px 0px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    clear: both;
+    overflow: hidden;
+}
+
+.personal-info-list dt{
+    color: #52799E;
+    float: left;
+    width: 100px;
+}
+
+.personal-info-list dd{
+    float: left;
+    margin-left: 0px;
+}
+
+.personal-info-center-list {
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    clear: both;
+    overflow: hidden;
+}
+
+.personal-info-center-list dt{
+    color: #52799E;
+    float: left;
+    width: 100px;
+    min-height: 1px;
+    text-align: right;
+    clear: both;
+}
+
+.personal-info-center-list dd{
+    float: left;
+    margin-left: 20px;
+}
+
+/*
+ *  Datum
+*/
+.personal-info-datum{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+/*
+ *  Removable datum
+*/
+.personal-info-removable-datum{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.personal-info-removable-datum span, .personal-info-removable-datum a{
+    line-height: 24px;
+    margin-left: 24px;
+}
+
+.personal-info-removable-datum .personal-info-remover{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -weblit-border-radius: 0px;
+    cursor: pointer;
+}
+
+
+/*
+ *  Data
+*/
+.personal-info-data{
+    position: relative;
+    margin-bottom: 5px;
+    border-top: 1px solid #ccc;
+}
+
+.personal-info-data span{
+    line-height: 48px;
+    margin-left: 60px;
+}
+
+.personal-info-data a {
+    color: #000;
+}
+
+.personal-info-data img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -weblit-border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*
+ *  Removable data
+*/
+.personal-info-removable-data{
+    position: relative;
+    margin-bottom: 5px;
+    border-top: 1px solid #ccc;
+}
+
+.personal-info-removable-data .personal-info-remover{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    left: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -weblit-border-radius: 0px;
+    cursor: pointer;
+}
+
+.personal-info-removable-data span{
+    line-height: 48px;
+    margin-left: 90px;
+}
+
+.personal-info-removable-data img{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -weblit-border-radius: 5px;
+}
+
+.personal-info-list-no-border{
+    padding-top: 0px;
+    border-top: none;
+}
+
+/*
+ *  Setting form
+*/
+.personal-info-form{
+    width: 500px;
+    margin: 0px auto;
+}
+
+.personal-info-add-list{
+    position: relative;
+}
+
+.personal-info-add-list textarea{
+    height: 14px;
+    margin-left: 24px;
+}
+
+.personal-info-add-list img{
+    position: absolute;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+}
+
+.personal-info-alert{
+    color: #ff7474;
+}

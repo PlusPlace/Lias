@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+    <head>
+        <title>Lias Documentation | Group API （ユーザー用） | GET</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../style/page.css" />
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <h2>Group API （ユーザー用） - GET</h2>
+                <hr />
+                <ul class="list">
+                    <li class="list-title"><a href="#request-url">リクエストURL</a></li>
+                    <li class="list-title"><a href="#parameters">パラメータ</a></li>
+                    <li class="list-title"><a href="#response">レスポンス(JSON)</a></li>
+                </ul>
+                <hr />
+            </header>
+
+            <article id="request-url">
+                <h4>リクエストURL</h4>
+
+                <section>
+                    <pre><code>GET http://dev-lias.plus-place.org/-/group-update.php</code></pre>
+                </section>
+            </article>
+
+            <article id="parameters">
+                <h4>パラメータ</h4>
+
+                <table class="table">
+                    <tr>
+                        <th>必須パラメータ</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                </table>
+
+                <table class="table">
+                    <tr>
+                        <th>オプションパラメータ</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                </table>
+            </article>
+
+            <article id="response">
+                <h4>レスポンス(JSON)</h4>
+
+                <section>
+<pre><code>[{
+    "group": {
+        "name": {string},
+        "groupId": {string},
+        "icon": {string}
+    },
+    "updates": [
+        {
+            "updatedAt": [
+                {number},
+                {number},
+                {number}
+            ],
+            "update": {string}
+        }
+    ]
+}]</code></pre>
+                </section>
+
+                <table class="table">
+                    <tr>
+                        <th>プロパティ名</th>
+                        <th>値</th>
+                        <th>説明</th>
+                    </tr>
+                    <tr>
+                        <td>group</td>
+                        <td>object</td>
+                        <td>グループ情報のオブジェクト</td>
+                    </tr>
+                    <tr>
+                        <td>group.name</td>
+                        <td>string</td>
+                        <td>グループ名</td>
+                    </tr>
+                    <tr>
+                        <td>group.groupId</td>
+                        <td>string</td>
+                        <td>グループのID</td>
+                    </tr>
+                    <tr>
+                        <td>group.icon</td>
+                        <td>string</td>
+                        <td>グループのプロフィール画像</td>
+                    </tr>
+                    <tr>
+                        <td>updates[]</td>
+                        <td>list</td>
+                        <td>グループの近況</td>
+                    </tr>
+                    <tr>
+                        <td>updates[].updatedAt[]</td>
+                        <td>list</td>
+                        <td>何らかのアップデートをした日<td>
+                    </tr>
+                    <tr>
+                        <td>updates[].updatedAt[ 0 ]</td>
+                        <td>number</td>
+                        <td>年</td>
+                    </tr>
+                    <tr>
+                        <td>updates[].updatedAt[ 1 ]</td>
+                        <td>number</td>
+                        <td>月</td>
+                    </tr>
+                    <tr>
+                        <td>updates[].updatedAt[ 2 ]</td>
+                        <td>number</td>
+                        <td>日</td>
+                    </tr>
+                    <tr>
+                        <td>updates[].update</td>
+                        <td>string</td>
+                        <td>何らかのアップデートに関する情報（例えば、イベントを作成した通知だったり、誰かをメンバーに加えたという通知だったり...）</td>
+                    </tr>
+                </table>
+
+                <section id="explanation">
+                    <h4>複数のグループおよび近況の定義について</h4>
+                    <p>
+                        複数のグループ、近況をJSONに定義する場合、次のようにしてください。
+                    </p>
+<pre><code>[{
+    "group": {
+        ...
+    }
+    "updates": [
+        {
+            "updatedAt": [
+                ...
+        },
+        {
+            "updatedAt": [
+                ...
+        }
+    ]
+},
+{
+    "group": {
+        ...
+    }
+    "updates": [
+        {
+            "updatedAt": [
+                ...
+        },
+        {
+            "updatedAt": [
+                ...
+        }
+    ]
+}]</code></pre>
+                <p>
+                    ただし、アップデート情報は3個までにしてください。
+                </p>
+                </section>
+            </article>
+        </div>
+    </body>
+
+</html>

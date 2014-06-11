@@ -1,0 +1,75 @@
+.group-container{
+    max-width: 1200px;
+    height: 100%;
+}
+
+.group-box{
+    width: 100%;
+}
+
+.group-top-inner-box{
+    height: 50px;
+    margin-left: 0px;
+    background-color: #ececec;
+}
+
+.group-bottom-inner-box{
+    background-color: #fff;
+    margin-left: 0px;
+    padding: 20px 0px;
+}
+
+.group-profile-image{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 25px;
+}
+
+.group-contents{
+    font-size: 12px;
+    margin: 0px 10px 0px 160px;
+    padding: 10px 0px;
+}
+
+.group-name{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.group-update-text p{
+    margin: 0px;
+    padding: 1em 0px;
+}
+
+.group-update-status{
+    margin-top: 5px;
+}
+
+.group-update-status span{
+    color: #52799e;
+    font-size: 12px;
+}
+
+.group-header{
+    line-height: 50px;
+    margin-left: 40px;
+}
+
+.group-header span{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.group-button{
+    width: 80px;
+    top: 12px;
+    right: 40px;
+    background-color: #a0bc61;
+}
+
+.group-button:hover{
+    background-color: #b3d076;
+}

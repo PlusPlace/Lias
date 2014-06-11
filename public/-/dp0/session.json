@@ -1,0 +1,14 @@
+{
+    "id": "p0",
+    "pageIcon": "/-/dp0/profile-image.png",
+    "pageName": "Administrator",
+    "primaryToolName": "home",
+    "usingTools": {
+        "home": "tlp0",
+        "info": "tlp7",
+        "timeline": "tlp1",
+        "group": "tlp2",
+        "calendar": "tlp4",
+        "direct-message": "tlp5"
+    }
+}

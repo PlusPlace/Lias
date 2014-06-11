@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+    <head>
+        <title>Lias Documentation | 作り方</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../style/page.css" />
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <h2>作り方</h2>
+                <hr />
+                <ul class="list">
+                    <li class="list-title"><a href="#intoroduce">まず始めに</a></li>
+                    <li class="list-title"><a href="#directory">ディレクトリ構成</a></li>
+                    <li class="list-title"><a href="#sidebar">サイドバーのパーツ</a></li>
+                    <li class="list-contents">
+                        <ul>
+                            <li><a href="#sidebar-list">項目</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-title"><a href="#page">ページのパーツ</a></li>
+                    <li class="list-contents">
+                        <ul>
+                            <li><a href="#page-header">ヘッダ</a></li>
+                            <li><a href="#page-list">リスト</a></li>
+                            <li><a href="#page-article">アーティクル</a></li>
+                            <li><a href="#page-section">セクション</a></li>
+                            <li><a href="#page-code">コード</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-title"><a href="#make">ページの作成</a></li>
+                    <li class="list-contents">
+                        <ul>
+                            <li><a href="#use">雛形を使う</a></li>
+                            <li><a href="#position">配置について</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr />
+            </header>
+            
+            <article id="introduce">
+                <h4>まず始めに</h4>
+                <p>
+                    仕様書の作成にはHTMLおよびCSSの知識が必要です。<br />
+                    このテンプレートは.html, .css, .pngの静的ファイルで構成されています。
+                    HTML5に準拠したドキュメントです。
+                </p>
+            </article>
+            
+            <article id="directory">
+                <h4>ディレクトリ構成</h4>
+                <ul>
+                    <li>documentation</li>
+                    <li class="list-contents">
+                        <ul>
+                            <li>pages</li>
+                            <li class="list-contents">
+                                <ul>
+                                    <li>ページファイル</li>
+                                </ul>
+                            </li>
+                            <li>style
+                            <li class="list-contents">
+                                <ul>
+                                    <li>images</li>
+                                    <li class="list-contents">
+                                        <ul>
+                                            <li>イメージファイル</li>
+                                        </ul>
+                                    </li>
+                                    <li>page.css</li>
+                                    <li>template.css</li>
+                                </ul>
+                            </li>
+                            <li>index.html</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    page.css: ページファイル内のHTMLドキュメントに適用されるレイアウト情報です。<br />
+                    template.css: テンプレートに適用されるレイアウト情報です。<br />
+                    index.html: 基本テンプレートです。
+                </p>
+            </article>
+            
+            <article id="sidebar">
+                <h4>サイドバーのパーツ</h4>
+                
+                <section id="sidebar-list">
+                    <h4>項目</h4>
+                    <p>
+                        左のサイドバーにはそれぞれ独立した項目が表示されています。<br />
+                        これらのパーツは以下のタグで構成されています（値はデフォルトです）。
+                    </p>
+                    
+                    <pre>
+<code>&lt;div class="list-box"&gt;
+    &lt;ul class="list"&gt;
+        &lt;li class="list-title"&gt;タイトル&lt;/li&gt;
+        &lt;li class="list-contents"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="pages/XXX/a.html" target="main-frame"&gt;リスト1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="pages/XXX/b.html" target="main-frame"&gt;リスト2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="pages/XXX/c.html" target="main-frame"&gt;リスト3&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code>
+                    </pre>
+                    
+                    <p>
+                        これを、<a href="#directory">ディレクトリ構成</a>にあるindex.htmlに追加します。
+                        追加方法は、
+                    </p>
+                    
+                    <pre>
+<code>&lt;!-- セクション始め --&gt;
+...
+&lt;!-- セクション終了 --&gt;</code>
+                    </pre>
+                    
+                    <p>と表記されているタグを参考にしてください。</p>
+                </section>
+            </article>
+            
+            <article id="page">
+                <h4>ページのパーツ</h4>
+                <p>完成形は<a href="#make">ページの作成</a>にあります。完成形を見ながら次の説明を読んでいくとわかりやすいかもしれません。</p>
+                
+                <section id="page-header">
+                    <h4>ヘッダ</h4>
+                    
+                    <p>
+                        それぞれのページの上部に表示されるパーツです。タイトル、目次があります。<br />
+                        これらのパーツは以下のタグで構成されています（値はデフォルトです）。
+                    </p>
+                    
+                    <pre>
+<code>&lt;header&gt;
+    &lt;h2&gt;タイトル&lt;/h2&gt;
+    &lt;hr /&gt;
+    &lt;!-- ここには<a href="#page-list">リスト</a>が挿入されます。 --&gt;
+    &lt;hr /&gt;
+&lt;/header&gt;</code>
+                    </pre>
+                </section>
+                
+                <section id="page-list">
+                    <h4>リスト</h4>
+                    
+                    <p>
+                        ヘッダの目次に使用されます。<br />
+                        これらのパーツは以下のタグで構成されています（値はデフォルトです）。
+                    </p>
+                    
+                    <pre>
+<code>&lt;ul class="list"&gt;
+    &lt;li class="list-title"&gt;&lt;a href="#ABC"&gt;アーティクルのタイトル&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="list-contents"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#ABC-DEF"&gt;セクションのタイトル&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code>
+                    </pre>
+                    
+                    <p>
+                        ul, liをさらに入れ子にすると、
+                    </p>
+                    
+                    <pre>
+<code>&lt;ul class="list"&gt;
+    &lt;li class="list-title"&gt;&lt;a href="#ABC"&gt;アーティクルのタイトル&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="list-contents"&gt;
+        &lt;ul&gt;
+            &lt;li class="list-contents"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#ABC-DEF"&gt;セクションのタイトル&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code>
+                    </pre>
+                    
+                    <p>
+                        となります。<br />
+                        リストは、<a href="#page-header">ヘッダ</a>に挿入してください。
+                    </p>
+                    <p>
+                        a要素の親要素がlist-titleをclass属性の値にとるli要素のとき、このa要素はハッシュで<a href="#page-article">アーティクル</a>のIDを、
+                        それ以外のa要素は<a href="#page-section">セクション</a>のIDを参照してください。
+                    </p>
+                </section>
+                
+                <section id="page-article">
+                    <h4>アーティクル</h4>
+                    <p>
+                        独立した記事を表記します。<br />
+                        これらのパーツは以下のタグで構成されています（値はデフォルトです）。
+                    </p>
+                    
+                    <pre>
+<code>&lt;article id=&quot;ABC&quot;&gt;
+    &lt;h4&gt;アーティクルのタイトル&lt;/h4&gt;
+    &lt;p&gt;アーティクル内の記事&lt;/p&gt;
+    &lt;!-- 必要に応じて<a href="#page-section">セクション</a>が挿入されます。 --&gt;
+&lt;/article&gt;</code>
+                    </pre>
+                    
+                    <p>
+                        id属性の値はリストが参照するハッシュと同名にする必要があります。
+                    </p>
+                </section>
+                
+                <section id="page-section">
+                    <h4>セクション</h4>
+                    <p>
+                        <a href="#page-article">アーティクル</a>内に配置されます。ひとまとまりの記事を表記します。<br />
+                        これらのパーツは以下のタグで構成されています（値はデフォルトです）。
+                    </p>
+                    
+                    <pre>
+<code>&lt;section id=&quot;ABC-DEF&quot;&gt;
+    &lt;h4&gt;セクションのタイトル&lt;/h4&gt;
+    &lt;p&gt;セクション内の記事&lt;/p&gt;
+&lt;/section&gt;</code>
+                    </pre>
+                </section>
+                
+                <section id="page-code">
+                    <h4>コード</h4>
+                    <p>
+                        ソースコードを表示する際に用いられます。<br />
+                        これらのパーツは以下のタグで構成されています（値はデフォルトです）。
+                    </p>
+
+                    <pre>
+<code>&lt;pre&gt;
+&lt;code&gt;alert( 'Hello, world' );&lt;/code&gt;
+&lt;/pre&gt;</code>
+                    </pre>
+                </section>
+            </article>
+            
+            <article id="make">
+                <h4>ページの作成</h4>
+                
+                <section id="use">
+                    <h4>雛形を使う</h4>
+                    <p>
+                        ページの完成形は以下のようになります。
+                    </p>
+                    
+                    <pre>
+<code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;ja&quot;&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;Lias Documentation | タイトル&lt;/title&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+        &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../../style/page.css&quot; /&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;header&gt;
+                &lt;h2&gt;タイトル&lt;/h2&gt;
+                &lt;hr /&gt;
+                &lt;ul class=&quot;list&quot;&gt;
+                    &lt;li class=&quot;list-title&quot;&gt;&lt;a href=&quot;#ABC&quot;&gt;アーティクルのタイトル&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;list-contents&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#ABC-DEF&quot;&gt;セクションのタイトル&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;hr /&gt;
+            &lt;/header&gt;
+            
+            &lt;article id=&quot;ABC&quot;&gt;
+                &lt;h4&gt;アーティクルのタイトル&lt;/h4&gt;
+                &lt;p&gt;アーティクル内の記事&lt;/p&gt;
+                
+                &lt;section id=&quot;ABC-DEF&quot;&gt;
+                    &lt;h4&gt;セクションのタイトル&lt;/h4&gt;
+                    &lt;p&gt;セクション内の記事&lt;/p&gt;
+                    &lt;pre&gt;
+&lt;code&gt;alert( 'Hello, world' );&lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/section&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;</code>
+                    </pre>
+                </section>
+                
+                <section id="position">
+                    <h4>配置について</h4>
+                    <p>
+                        <a href="#directory">ディレクトリ構成</a>のpagesに特定のフォルダを作成し、そこに作成したページを配置してください。
+                        また、サイドバーに新たな項目を追加するごとにフォルダを作成してください。<br />
+                        例えば、「Sample」という新たな項目をサイドバーに追加し、api.htmlを作成するとき、ディレクトリ構成は次のようになります。
+                    </p>
+                    <ul>
+                        <li>documentation</li>
+                        <li class="list-contents">
+                            <ul>
+                                <li>pages</li>
+                                <li class="list-contents">
+                                    <ul>
+                                        <li>sample</li>
+                                        <li class="list-contents">
+                                            <ul>
+                                                <li>api.html</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>style
+                                <li class="list-contents">
+                                    <ul>
+                                        <li>images</li>
+                                        <li class="list-contents">
+                                            <ul>
+                                                <li>イメージファイル</li>
+                                            </ul>
+                                        </li>
+                                        <li>page.css</li>
+                                        <li>template.css</li>
+                                    </ul>
+                                </li>
+                                <li>index.html</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </body>
+
+</html>

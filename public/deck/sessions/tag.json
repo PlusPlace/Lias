@@ -1,0 +1,16 @@
+{
+    "id": "tag",
+    "pageIcon": "tools/global.tag-info/style/images/icon.png",
+    "pageName": "タグ",
+    "primaryToolName": "info"
+  , "usingTools": {
+        "info": "tlx2"
+    }
+  , "lancher":{
+        "info": {
+            "name": "info"
+          , "icon": "tools/global.tag-info/style/images/icon.png"
+          , "description": "タグ情報"
+        }
+    }
+}

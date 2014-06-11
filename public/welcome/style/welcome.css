@@ -1,0 +1,175 @@
+/**
+ *  Lias::Initialize
+ * 
+ *  @version 0.0.1
+ *  @author  Saneyuki Tadokoro <post@saneyuki.gfunction.com>
+ * 
+ *  Copyright (c) 2011, 2012 Plus-place project
+*/
+
+
+/*
+ *  Revise document
+*/
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+    background: #fff;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*
+ *  Global settings
+*/
+.radius{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+/*
+ *  Cover
+*/
+.cover{
+    width: 100%;
+    min-width: 1000px;
+    height: 606px;
+    background: transparent url(/welcome/style/images/welcome-bg.png) repeat-x;
+    overflow: hidden;
+}
+
+.cover-main{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/*
+ *  Top
+*/
+.top{
+    margin-top: 40px;
+    position: relative;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+#login{
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 25px;
+    margin-right: 50px;
+    background-color: #84af82;
+    text-align: center;
+    float: right;
+}
+
+#login:hover{
+    background-color: #91ba8e;
+}
+
+
+/*
+ *  Main
+*/
+#frame{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #84af82;
+    margin: 50px 0px 0px 60px;
+    background: #84af82;
+    box-shadow: 0px 0px 10px #555;
+    -moz-box-shadow: 0px 0px 10px #555;
+    -webkit-box-shadow: 0px 0px 10px #555;
+    float: left;
+}
+
+#description{
+    width: 400px;
+    margin: 50px 50px 0px 0px;
+    float: right;
+}
+
+#event-icon{
+    margin-left: 104px;
+    margin-top: 54px;
+}
+
+.section-title{
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.section-contents{
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+/*
+ *  Footer
+*/
+.footer{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.plus-place-logo{
+    margin-top: 10px;
+    margin-left: 50px;
+    border: none;
+}
+
+.footer-main-contents{
+    width: 750px;
+    height: 100px;
+    border-left: 5px solid #ccc;
+    float: right;
+}
+
+.bio{
+    color: #aaa;
+    font-size: 25px;
+    line-height: 60px;
+    margin-left: 40px;
+}
+
+.copyright{
+    color: #aaa;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 40px;
+}

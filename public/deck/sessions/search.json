@@ -1,0 +1,16 @@
+{
+    "id": "search",
+    "pageIcon": "tools/global.search/style/images/icon.png",
+    "pageName": "検索",
+    "primaryToolName": "all"
+  , "usingTools": {
+        "all": "tlx3"
+    }
+  , "lancher":{
+        "all": {
+            "name": "all"
+          , "icon": "tools/global.search/style/images/icon.png"
+          , "description": "検索"
+        }
+    }
+}

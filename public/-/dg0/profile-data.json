@@ -1,0 +1,50 @@
+{
+    "name": "+place",
+    "profileImage": "/-/dg0/profile-image.png",
+    "summary": "「アクティブな学生の校外活動をアシストするWebサービスを創る」<br />「ITに興味を持っている学生同士のつながりを創る」<br />「次世代を担う人材の育成する」",
+    "member": [
+        {
+            "name": "Administrator",
+            "icon": "/-/dp0/profile-image.png",
+            "userId": "0"
+        },
+        {
+            "name": "Guest 1",
+            "icon": "/-/dp1/profile-image.png",
+            "userId": "1"
+        },
+        {
+            "name": "Guest 2",
+            "icon": "/-/dp2/profile-image.png",
+            "userId": "2"
+        }
+    ],
+    "groups": [
+        {
+            "name": "+place",
+            "icon": "/-/dg0/profile-image.png",
+            "groupId": "0"
+        }
+    ],
+    "tags": [
+        {
+            "name": "学生団体",
+            "tagId": "t0"
+        }
+    ],
+    "basicInfo": {
+        "founded": "2011/4/1"
+    },
+    "contactInfo": {
+        "mails": [
+            "info.plusplace@gmail.com"
+        ],
+        "websites": [
+            "http://plusplace.info",
+            "http://lias.plus-place.org",
+            "http://ts.plus-place.org"
+        ]
+    },
+    "valid": true,
+    "permission": true
+}
